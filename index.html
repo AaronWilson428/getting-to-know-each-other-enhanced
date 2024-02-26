@@ -17,7 +17,20 @@
         <a href="mailto:aaronswilsonperez@lewisu.edu">aaronswilsonperez@lewisu.edu</a>
         <p>Discord: awlsn.</p>
         <h2>Introduction</h2>
-        <p>I am currently a 21 year old Senior majoring in aviation administration with a minor in flight dispatch. I work as a semi truck driver on the weekends for an ice supplier in Woodridge. I do local deliveries to gas stations, grocery stores, food processors and even O'hare airport. For my family, I have my mom and my dad, along with my older sister who currently lives in Washington DC.</p>
+        <p id="demo"></p>
+        <script>
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 12) {
+          greeting = "good morning";      
+        } else if (time < 17) {
+          greeting = "good afternoon";      
+        } else {
+          greeting = "good evening";            
+        }   
+        document.getElementById("demo").innerHTML = greeting;
+        </script>
+        <p>My name is Aaron Wilson. I am currently a 21 year old Senior majoring in aviation administration with a minor in flight dispatch. I work as a semi truck driver on the weekends for an ice supplier in Woodridge. I do local deliveries to gas stations, grocery stores, food processors and even O'hare airport. For my family, I have my mom and my dad, along with my older sister who currently lives in Washington DC.</p>
         <h2>What I hope to learn in this course</h2>
         <p>I hope to learn how to write and use different programming languages, and I also hope to learn how to make websites and programs better with Github and different programming languages</p>
         <h2>My favorite hobbies/activities</h2>
